@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.WalletActivity"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/slug_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="slug"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+        <TextView
+            android:id="@+id/symbol_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="symbol"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="126dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="200dp">
+
+        <TextView
+            android:id="@+id/amount_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="amount"
+            tools:layout_editor_absoluteX="212dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+        <TextView
+            android:id="@+id/price_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            tools:layout_editor_absoluteX="212dp"
+            tools:layout_editor_absoluteY="128dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
