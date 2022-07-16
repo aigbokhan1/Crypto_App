@@ -17,7 +17,6 @@ class CryptoAdapter(var cryptoItems :  List<CryptoItems>)
     inner class CryptoViewHolder (val view : View, val cryptoList: List<CryptoItems>)
         : RecyclerView.ViewHolder(view) {
 
-
         fun bind(position: Int) {
             if (itemCount != 0) {
                 view.textview_slug.text = cryptoList.get(position).slug

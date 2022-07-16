@@ -15,11 +15,11 @@ import java.math.RoundingMode
 import java.text.DecimalFormat
 
 
-class WalletAdapter(var cryptoItems : kotlin.collections.List<CryptoItems>) :
+class WalletAdapter(var cryptoItems : List<CryptoItems>) :
         RecyclerView.Adapter<WalletAdapter.WalletViewHolder>() {
 
         inner class WalletViewHolder(view : View) : RecyclerView.ViewHolder(view) {
-        var wallettextviewslug = view.slug_txtView
+        var wallettextviewslug: TextView = view.slug_txtView
         var wallettextviewsymbol = view.symbol_txtView
         var wallettextviewprice = view.price_txtView
 

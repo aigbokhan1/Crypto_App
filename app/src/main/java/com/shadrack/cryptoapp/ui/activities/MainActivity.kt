@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
 
         cryptoViewModel.getCryptoRemote(fields)
         cryptoViewModel.getCryptoLocal()
-
         setUpRecyclerView()
+
         btn_wallet.setOnClickListener {
             val intent = Intent(this, WalletActivity::class.java)
             startActivity(intent)
