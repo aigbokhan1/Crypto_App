@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Crypto App</string>
+    <string name="sub_text1">To prevent identity theft or fraud, we\'ll need to make sure its really you by uploading an ID</string>
+    <string name="sub_text2">Use your bank, Debit or Credit card to fund any crypto buy</string>
+    <string name="sub_text3">Instantly sell your crypto for cash. Keep the cash in your wallet or withdraw to a linked bank</string>
 </resources>

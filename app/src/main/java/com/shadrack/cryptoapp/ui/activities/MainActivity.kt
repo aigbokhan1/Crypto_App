@@ -41,6 +41,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btn_buy.setOnClickListener {
+            val intent = Intent(this, BuyActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_sell.setOnClickListener {
+            val intent = Intent(this, SellActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 

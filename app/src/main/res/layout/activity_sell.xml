@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.SellActivity"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/img_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_cart"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/txt_sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sell Crypto"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_below="@id/img_cart"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_sell"
+        android:layout_margin="10dp"
+        android:text="verify your identity to sell crypto for cash"
+        android:textSize="22sp" />
+    <RelativeLayout
+        android:id="@+id/list_of_rules1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/txt_verify">
+
+        <TextView
+            android:id="@+id/txt_number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="30sp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_number1_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/txt_number1"
+            android:text="Verify Your Identity"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txt_number1_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_number1_text1"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/txt_number1"
+            android:text="@string/sub_text1"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_of_rules2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/list_of_rules1">
+
+            <TextView
+                android:id="@+id/txt_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="2"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txt_number2_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Crypto"
+                android:textSize="22sp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@id/txt_number2"/>
+
+            <TextView
+                android:id="@+id/txt_number2_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_number2_text1"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/txt_number2"
+                android:text="@string/sub_text2"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_of_rules3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/list_of_rules2">
+
+        <TextView
+            android:id="@+id/txt_number3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="3"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txt_number3_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell At Anytime"
+            android:textSize="22sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/txt_number3"/>
+
+        <TextView
+            android:id="@+id/txt_number3_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_number3_text1"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/txt_number3"
+            android:text="@string/sub_text3"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/verify_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify My Identity"
+        android:layout_below="@id/list_of_rules3"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>
