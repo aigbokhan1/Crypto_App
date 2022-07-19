@@ -11,7 +11,7 @@ import com.shadrack.cryptoapp.util.Converters
    Converters::class
 )
 
-@Database(entities = [CryptoItems ::class], version = 1)
+@Database(entities = [CryptoItems ::class], version = 2)
 abstract class CryptoDB : RoomDatabase() {
 
    abstract fun cryptoDao() : CryptoDao

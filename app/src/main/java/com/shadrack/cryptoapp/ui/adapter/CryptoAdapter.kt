@@ -22,7 +22,7 @@ class CryptoAdapter(var cryptoItems :  List<CryptoItems>)
                 view.textview_slug.text = cryptoList.get(position).slug
                 view.textview_symbol.text = cryptoList.get(position).symbol
                 view.textview_price.text = roundOffDecimal(cryptoList.get(position)
-                    .metrics.market_data.price_usd)
+                    .metrics!!.market_data!!.price_usd)
             }
         }
     }

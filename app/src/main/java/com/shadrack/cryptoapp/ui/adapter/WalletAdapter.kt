@@ -35,7 +35,7 @@ class WalletAdapter(var cryptoItems : List<CryptoItems>) :
         holder.wallettextviewslug.text = listitems.slug
         holder.wallettextviewsymbol.text = listitems.symbol
         holder.wallettextviewprice.text = roundOffDecimal(listitems
-        .metrics.market_data.price_usd)
+        .metrics!!.market_data!!.price_usd)
 
         }
 
